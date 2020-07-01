@@ -32,6 +32,7 @@ def login(username: str, password: str) -> req_Session:
     return s
 
 
+
 # 通过抓取用户设置页面的标题检查是否登录成功
 def check_login_status(s: req_Session, number_c: int) -> bool:
     test_url = "https://www.hostloc.com/home.php?mod=spacecp"
